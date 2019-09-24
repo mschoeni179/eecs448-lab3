@@ -9,6 +9,7 @@
     <br> <br>
     <button onclick=validate() type="button">Validate</button>
     <p id="message"></p>
+    <p id="match"></p>
     <script>
     
     function validate()
@@ -16,13 +17,14 @@
         let password = document.getElementById("password1");
         let passConfirm = document.getElementById("password2");
         document.getElementById("message").innerHTML = "";
-        if (password.length < 8)
+        document.getElementById("match").innerHTML = "";
+        if (password.value.length < 8)
         {
-            document.getElementById("message").innerHTML += "Error, your password is not long enough";
+            document.getElementById("message").innerHTML = "Error, your password is not long enough ";
         }
-        if (password != passConfirm)
+        if (password.value != passConfirm.value)
         {
-            document.getElementById("message").innerHTML += "Error, your passwords don't match";
+            document.getElementById("match").innerHTML = "Error, your passwords don't match";
         }
 
     }
