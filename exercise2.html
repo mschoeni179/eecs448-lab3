@@ -9,20 +9,74 @@
     <body>
 
         <img id="pic" src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022__340.jpg"> <br>
-        <button onclick=forward() type="button">Previous</button> 
-        <button onclick=back() type="button">Next</button> <br>
+        <button onclick=back() type="button">Previous</button> 
+        <button onclick=forward() type="button">Next</button> <br>
         
     </body>
 
     <script>
     function forward()
     {
+        let p1 = "https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022__340.jpg";
+        let p2 = "https://images.unsplash.com/photo-1496483648148-47c686dc86a8?ixlib=rb-1.2.1&w=1000&q=80";
+        let p3 = "https://economictimes.indiatimes.com/blogs/wp-content/uploads/2017/10/Marigold_bccl.jpg";
+        let p4 = "https://www.cityflowers.co.in/blog/wp-content/uploads/2017/09/Purple_flowers_1.jpg";
+        let p5 = "https://www.fairtrade.org.uk/~/media/FairtradeUK/Media%20Centre/Blog%20Images/2019/Jan%20-%20April%202019/Flowers%20-%20banner.png";
+        let pic = document.getElementById("pic");
+        
+        if (pic.src === p1)
+        {
+            pic.src = p2;
+        }
+        else if (pic.src === p2)
+        {
+            pic.src = p3;
+        }
+        else if (pic.src === p3)
+        {
+            pic.src = p4;
+        }
+        else if (pic.src === p4)
+        {
+            pic.src = p5;
+        }
+        else
+        {
+            pic.src = p1;
+        }
 
     }
 
     function back() 
     {
+        let p1 = "https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022__340.jpg";
+        let p2 = "https://images.unsplash.com/photo-1496483648148-47c686dc86a8?ixlib=rb-1.2.1&w=1000&q=80";
+        let p3 = "https://economictimes.indiatimes.com/blogs/wp-content/uploads/2017/10/Marigold_bccl.jpg";
+        let p4 = "https://www.cityflowers.co.in/blog/wp-content/uploads/2017/09/Purple_flowers_1.jpg";
+        let p5 = "https://www.fairtrade.org.uk/~/media/FairtradeUK/Media%20Centre/Blog%20Images/2019/Jan%20-%20April%202019/Flowers%20-%20banner.png";
+        let pic = document.getElementById("pic");
         
+        if (pic.src === p1)
+        {
+            pic.src = p5;
+        }
+        else if (pic.src === p2)
+        {
+            pic.src = p1;
+        }
+        else if (pic.src === p3)
+        {
+            pic.src = p2;
+        }
+        else if (pic.src === p4)
+        {
+            pic.src = p3;
+        }
+        else
+        {
+            pic.src = p4;
+        }
+
     }
     
     
