@@ -1,0 +1,22 @@
+
+head {
+    background-color: lightblue;
+}
+
+body {
+    background-color: lavender;
+    color: darkslateblue;
+    font-family: 'Lucida Sans';
+    font-size: 20pt;
+}
+
+img {
+    width: 490px;
+    height: 300px;
+}
+
+button {
+    background-color: aquamarine;
+    margin: 7px;
+    height: 30px;
+}
