@@ -1,0 +1,32 @@
+
+head {
+    background-color: rgb(148, 143, 228);
+}
+
+body {
+    background-color: rgb(196, 226, 255);
+    color: darkmagenta;
+    font-family: 'Lucida Sans';
+    font-size: 20pt;
+}
+
+p {
+    color: black;
+    font-size: 12pt;
+}
+
+img {
+    width: 350px;
+    object-fit: contain;
+}
+
+img:hover {
+    width: 650px;
+    object-fit: contain;
+}
+
+button {
+    background-color: aquamarine;
+    margin: 7px;
+    height: 30px;
+}
