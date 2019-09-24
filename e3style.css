@@ -8,11 +8,17 @@ body {
     color: darkmagenta;
     font-family: 'Lucida Sans';
     font-size: 20pt;
+    align-content: left;
 }
 
 p {
     color: black;
     font-size: 12pt;
+}
+
+p.expand {
+    color: darkmagenta;
+    font-size: 15pt;
 }
 
 img {
