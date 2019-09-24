@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Exercise 1: Password validater</title>
+    <h1>This program will validate your password. Enter a password below</h1>
+    <h3>Your password must be greater than 8 characters long</h3>
+    Password:<input type="text" id="password1" > <br>
+    Confirm Password:<input type="text" id="password2" value=>
+    <br> <br>
+    <button onclick=validate() type="button">Validate</button>
+    <p id="message"></p>
+    <script>
+    
+    function validate()
+    {
+        let password = document.getElementById("password1");
+        let passConfirm = document.getElementById("password2");
+        document.getElementById("message").innerHTML = "";
+        if (password.length < 8)
+        {
+            document.getElementById("message").innerHTML += "Error, your password is not long enough";
+        }
+        if (password != passConfirm)
+        {
+            document.getElementById("message").innerHTML += "Error, your passwords don't match";
+        }
+
+    }
+    </script>
+
+
+</head>
