@@ -1,6 +1,12 @@
 
-head {
-    background-color: rgb(148, 143, 228);
+header {
+    background-image: url("http://abundantlifechurches.org/wp-content/uploads/2016/01/ice-skate-header.jpg"); 
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: black;
+    text-align: left;
 }
 
 body {
