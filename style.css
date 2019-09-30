@@ -6,7 +6,6 @@ h1 {
 }
 
 body {
-    background-color: rgb(196, 226, 255);
     color: darkblue;
     font-family: 'Lucida Sans';
     font-size: 20pt;
@@ -18,8 +17,7 @@ p {
     font-size: 12pt;
 }
 
-button {
-    background-color: aquamarine;
-    margin: 7px;
-    height: 30px;
+ul {
+    color: black;
+    font-size: 12pt;
 }

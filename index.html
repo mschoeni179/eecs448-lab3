@@ -9,25 +9,15 @@
     <h3>Computer science major</h3>
 
     <p id="status">Currently, I am taking EECS 448. Here is the link to the other exercises for lab 3.</p>
-    <p id="match"></p>
+    <ul>
+        <li> <a href="https://github.com/mschoeni179/eecs448-lab3/blob/master/exercise1.html">Exercise 1:</a>  Password Validator</li>
+        <li> <a href="https://github.com/mschoeni179/eecs448-lab3/blob/master/exercise2.html">Exercise 2:</a>  Slideshow</li>
+        <li> <a href="https://github.com/mschoeni179/eecs448-lab3/blob/master/exercise3.html">Exercise 3:</a>  Profile</li>
+        <li> <a href="https://github.com/mschoeni179/eecs448-lab3/blob/master/exercise4.html">Exercise 4:</a>  CSS Manipulation</li>
+    </ul>
     <script>
     
-    function validate()
-    {
-        let password = document.getElementById("password1");
-        let passConfirm = document.getElementById("password2");
-        document.getElementById("message").innerHTML = "";
-        document.getElementById("match").innerHTML = "";
-        if (password.value.length < 8)
-        {
-            document.getElementById("message").innerHTML = "Error, your password is not long enough ";
-        }
-        if (password.value != passConfirm.value)
-        {
-            document.getElementById("match").innerHTML = "Error, your passwords don't match";
-        }
-
-    }
+    
     </script>
 
 
