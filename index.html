@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+        <link href="style.css"
+        rel="stylesheet"
+        type="text/css"/>
+    <title>Malena Schoeni profile</title>
+    <h1>Malena Schoeni</h1>
+    <h3>Computer science major</h3>
+
+    <p id="status">Currently, I am taking EECS 448. Here is the link to the other exercises for lab 3.</p>
+    <p id="match"></p>
+    <script>
+    
+    function validate()
+    {
+        let password = document.getElementById("password1");
+        let passConfirm = document.getElementById("password2");
+        document.getElementById("message").innerHTML = "";
+        document.getElementById("match").innerHTML = "";
+        if (password.value.length < 8)
+        {
+            document.getElementById("message").innerHTML = "Error, your password is not long enough ";
+        }
+        if (password.value != passConfirm.value)
+        {
+            document.getElementById("match").innerHTML = "Error, your passwords don't match";
+        }
+
+    }
+    </script>
+
+
+</head>

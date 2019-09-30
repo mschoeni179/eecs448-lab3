@@ -1,0 +1,25 @@
+
+
+h1 {
+    color: black;
+    text-align: left;
+}
+
+body {
+    background-color: rgb(196, 226, 255);
+    color: darkblue;
+    font-family: 'Lucida Sans';
+    font-size: 20pt;
+    align-content: left;
+}
+
+p {
+    color: black;
+    font-size: 12pt;
+}
+
+button {
+    background-color: aquamarine;
+    margin: 7px;
+    height: 30px;
+}
