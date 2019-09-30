@@ -1,0 +1,56 @@
+<html>
+    <header>
+        <h1>Some dummy text</h1>
+    </header>
+    <body>
+        <p id="body" style="border-style: solid; border-color: white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 
+            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. <br> <br>
+            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. 
+            Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. 
+            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. 
+            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. 
+            Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+
+            </p>
+            <div>
+                <h2>Border color selection</h2>
+                <p>Enter RGB values from 0-255 in the text fields below:</p>
+                Red value  <input type="text" id="redB" > <br><br>
+                Blue value <input type="text" id="blueB"> <br><br>
+                Green value <input type="text" id="greenB"> <br><br>
+                <button onclick=updateBorder() type="button">Change Border</button>
+            </div>
+            <div></div>
+                <h2>Background color selection</h2>
+                <p>Enter RGB values from 0-255 in the text fields below:</p>
+                Red value  <input type="text" id="red" > <br><br>
+                Blue value <input type="text" id="blue"> <br><br>
+                Green value <input type="text" id="green"> <br><br> 
+                <button onclick=updateBackground() type="button">Change Background</button>
+
+            </div>
+            
+    </body>
+
+    <script>
+            function updateBackground() {
+                let red = document.getElementById("red").value;
+                let green = document.getElementById("green").value;
+                let blue = document.getElementById("blue").value;
+                document.getElementById("body").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+            }
+
+            function updateBorder() {
+                let red = document.getElementById("redB").value;
+                let green = document.getElementById("greenB").value;
+                let blue = document.getElementById("blueB").value;
+                document.getElementById("body").style.borderColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+            }
+    </script>
+</html>
